@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>my html learnings</title>
+    <style>
+      table, th, td{
+        border-collapse: collapse;
+      }
+      .my-table{
+        border-collapse: collapse;
+      }
+
+      .rotate{
+         transform: rotate(-90deg);
+         white-space: nowrap;
+      }
+    </style>
+   
+    
+</head>
+<body style="background-color: aquamarine;">
+  <h1>
+    semantic elements
+  </h1>
+  <nav>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ul>
+    <ol>
+        <li>banana</li>
+        <li>jack fruit</li>
+    </ol>
+
+    <ol>
+      <li>Fruits
+        <ul>
+          <li>apple</li>
+          <li>mango</li>
+          <li>pineapple</li>
+        </ul>
+      </li>
+      <li>vegetables
+        <ul>
+          <li>carrot</li>
+          <li>beetroot</li>
+        </ul>
+      </li>
+    </ol>
+
+    <dl>
+        <dt>define html</dt>
+        <dd>html means hyper text markup language</dd>
+         <dt>define css</dt>
+        <dd>css means cascading stylesheet</dd>
+        
+    </dl>
+  </nav>
+  <hr>
+  <img src="./IMG_20241029_204932_883.jpg" alt="my image" height="150" width="200">
+  <h1>HI bro</h1>
+  <h2>what bro</h2>
+  <h3>ok done</h3>
+  <h4>nothing bro</h4>
+  <h5>this that</h5>
+  <h6>all done</h6>
+  <hr><hr>
+  <p><b> Lorem, ipsum dolor sit</b> <strong>Lorem ipsum dolor sit amet.</strong> 
+    <i>Lorem, ipsum dolor.</i>. 
+    <em>Lorem ipsum dolor sit.</em><br>
+     <mark>Lorem, ipsum dolor.</mark> 
+     <small>Lorem ipsum dolor sit.</small> 
+     <del>Lorem ipsum dolor sit amet consectetur adipisicing.</del>
+     <ins>Lorem, ipsum dolor.</ins></p>
+     log<sub>32</sub>
+     x<sup>2</sup>
+     <q>Lorem, ipsum.</q>
+
+     <hr><hr>
+     <a href="https://www.w3schools.com/html/html_formatting.asp">refer html in w3 school</a><br>
+     <a href="./index.html" target="_blank">my portfolio</a>
+     <hr><hr>
+     <a href="mailto:example@example.com">send mail</a><br>
+     <a href="tel:9994133272">call me</a>
+     <hr><hr>
+
+     <table border="1">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>selva</td>
+        <td>sam</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>sam</td>
+        <td>selva</td>
+        <td>19</td>
+      </tr>
+     </table>
+     <hr><hr>
+       <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <button type="submit">Send Message</button>
+       </form><hr><hr>
+       <form action="">
+        <label for="text"><strong>choose ur favorite vehicles</strong></label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+        <label for="vehicle1">i love bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">l love car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="flight">
+        <label for="vehicle3">i love flight</label><br>
+        <button type="submit">submit</button>
+       </form><hr><hr>
+
+      
+
+        <label for="genre">Genre:</label>
+  <select id="genre" name="genre">
+    <optgroup label="Action/Adventure">
+      <option value="marvel">Marvel</option>
+      <option value="dc">DC</option>
+      <option value="bond">James Bond</option>
+    </optgroup>
+    <optgroup label="Romantic">
+      <option value="titanic">Titanic</option>
+      <option value="notebook" selected>The Notebook</option>
+    </optgroup>
+    <optgroup label="Horror">
+      <option value="conjuring">The Conjuring</option>
+      <option value="nun" disabled>The Nun (Not Available)</option>
+    </optgroup>
+  </select>
+<hr><hr>
+<table border="2">
+  <tr>
+    <th>period</th>
+    <th rowspan="2">p1</th>
+    <th rowspan="2">p2</th>
+    <th rowspan="2"></th>
+    <th rowspan="2">p3</th>
+    <th rowspan="2">p4</th>
+    <th rowspan="2"></th>
+    <th rowspan="2">p5</th>
+    <th rowspan="2">p6</th>
+    <th rowspan="2"> </th>
+    <th rowspan="2">p7</th>
+    <th rowspan="2">p8</th>
+  </tr>
+  <tr>
+    <th>Day</th>
+
+  </tr>
+  <tr>
+    <th>mon</th>
+    <td>mat</td>
+    <td>sci</td>
+    <td></td>
+    <td>fs</td>
+    <td>soc</td>
+    <td></td>
+    <td>eng</td>
+    <td>tam</td>
+    <td></td>
+    <td>mat</td>
+    <td>sci</td>
+  </tr>
+   <tr>
+    <th>Tue</th>
+    <td>mat</td>
+    <td>sci</td>
+    <td></td>
+    <td>pt</td>
+    <td>soc</td>
+    <td></td>
+    <td>eng</td>
+    <td>tam</td>
+    <td></td>
+    <td>mat</td>
+    <td>sci</td>
+  </tr>
+   <tr>
+    <th>Wed</th>
+    <td>mat</td>
+    <td>sci</td>
+    <td></td>
+    <td>fs</td>
+    <td>soc</td>
+    <td></td>
+    <td>eng</td>
+    <td>tam</td>
+    <td></td>
+    <td>mat</td>
+    <td>sci</td>
+  </tr>
+   <tr>
+    <th>Thu</th>
+    <td>mat</td>
+    <td>sci</td>
+    <td class="rotate">Interval</td>
+    <td>fs</td>
+    <td>soc</td>
+    <td class="rotate">Lunch</td>
+    <td>eng</td>
+    <td>tam</td>
+    <td class="rotate">Interval</td>
+    <td>mat</td>
+    <td>sci</td>
+  </tr>
+   <tr>
+    <th>Fri</th>
+    <td>mat</td>
+    <td>sci</td>
+    <td></td>
+    <td>fs</td>
+    <td>soc</td>
+    <td></td>
+    <td>eng</td>
+    <td>tam</td>
+    <td></td>
+    <td>mat</td>
+    <td>sci</td>
+  </tr>
+</table>
+
+</body>
+</html>
