@@ -43,7 +43,26 @@ console.log(x);
 x **= 7;
 console.log(x);
 
+const d = 333;
+const e = 444;
+const f = 333;
 
+console.log("Addition:", d + e);        
+console.log("Subtraction:", d - e);     
+console.log("Multiplication:", d * e);  
+console.log("Division:", d / e);        
+console.log("Modulus:", d % e);         
+console.log("Exponentiation:", d ** e); 
+console.log("Remainder:", d % e); 
+let floordiv = Math.floor(d / e);
+console.log("Floor division:", floordiv);
 
-
+console.log( d == e);   
+console.log( d === e); 
+console.log( d != f);   
+console.log( d !== e); 
+console.log( f > d);     
+console.log( d < c);   
+console.log( e >= 10);  
+console.log( f <= 20);  
 
