@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selvaganapathi Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      nav {
+        background: chocolate;
+        padding: 15px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        display: flex;
+        flex: 1;
+      }
+
+      aside {
+        width: 220px;
+        background: #f4f4f4;
+        padding: 20px;
+        border-right: 2px solid #ddd;
+        
+      }
+      aside img {
+        width: 100px;
+        height: 120px;
+        display: block;
+        margin: 0 auto 10px;
+        border-radius: 8px;
+      }
+      aside h2 {
+        text-align: center;
+        font-size: 18px;
+        color: chocolate;
+      }
+
+      aside .settings {
+        margin-top: auto;
+        text-align: center;
+        
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+      }
+      h1 {
+        color: chocolate;
+      }
+      h2 {
+        margin-top: 20px;
+        color: #444;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #444;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .img {
+        height: 350px;
+        width: 200px;
+      }
+
+      #contact {
+        margin-top: 30px;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+      }
+      #contact h2 {
+        color: chocolate;
+      }
+      #contact form {
+        max-width: 500px;
+      }
+      #contact input,
+      #contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #contact button {
+        background: chocolate;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      #contact button:hover {
+        background: #b3541e;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div><strong>Selvaganapathi Portfolio</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#plan">Learning Plan</a>
+        <a href="#contact">Contact me</a>
+        <a href="./SELVAGANAPATHI T - RESUME.pdf">Resume</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <aside>
+        <img src="./20241028_095120.jpg" alt="My Image" class="img" />
+        <h2>Full Stack Developer</h2>
+      </aside>
+
+      <main>
+        <header>
+          <h1 id="about">Selvaganapathi T</h1>
+          <p>
+            I’m Selva Ganapathi, a passionate techie from Madurai, aspiring
+            UI/UX Designer and Fullstack Developer.
+          </p>
+        </header>
+
+        <section id="education">
+          <h2>Education</h2>
+          <p>
+            BE. Computer Science and Engineering <br />
+            CGPA: <strong>8.00</strong>
+          </p>
+        </section>
+
+        <section id="skills">
+          <h2>My Skills</h2>
+          <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>UI/UX Design</li>
+          </ol>
+        </section>
+
+        <section id="projects">
+          <h2>Project</h2>
+          <p>
+            I completed a project called <strong>TALENT TRACK</strong>, a
+            web-based placement portal using PHP. <br />It is used by
+            <mark>students, placement officers, and recruiters</mark>. <br /><i
+              >Recruiters</i
+            >
+            only have login access and cannot update student details. <br /><i
+              >Placement officers</i
+            >
+            can update student details.
+          </p>
+        </section>
+
+        <section id="plan">
+          <h2>My Learning Plan</h2>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Topic</th>
+            </tr>
+            <tr>
+              <td>Day 1</td>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td>Day 2</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>Day 3</td>
+              <td>JavaScript</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form>
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea
+            ><br /><br />
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>© 2025 Selvaganapathi | Designed by Me...</p>
+    </footer>
+  </body>
+</html>
